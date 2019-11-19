@@ -7,9 +7,9 @@ namespace
 {
     const int signalNum = 15;
     const std::string prefix = "coefs";
-    const int correctAnswersLimit = 500;
+    const int correctAnswersLimit = 1000;
 
-    const unsigned char numbers[10][15] =
+    unsigned char numbers[10][15] =
     {
         {1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1},  // 0
         {0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1},  // 1
@@ -37,12 +37,12 @@ private:
     void training();
     void trainMinusOne();
     void trainPlusOne();
-    bool getResult();
 public:
+    bool getResult();
     bool isTrained();
     void start();
     unsigned int getCounter();
-    void setInput(const unsigned char* inputArray);
+    void setInput(unsigned char* inputArray);
 
     SingleNeuron(int learnNum);
 };

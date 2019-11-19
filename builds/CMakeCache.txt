@@ -229,6 +229,9 @@ neuron10_BINARY_DIR:STATIC=/home/vlad/projects/qt/neuron10/builds
 neuron10_SOURCE_DIR:STATIC=/home/vlad/projects/qt/neuron10
 
 //Dependencies for the target
+r_element_LIB_DEPENDS:STATIC=general;-lpthread;
+
+//Dependencies for the target
 trainer_LIB_DEPENDS:STATIC=general;-lpthread;general;SingleNeuron;
 
 

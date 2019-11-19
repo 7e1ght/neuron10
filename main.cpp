@@ -4,6 +4,7 @@
 
 #include "singleneuron.h"
 #include "neurontrainer.h"
+#include "r_element.h"
 
 using namespace std;
 
@@ -14,10 +15,11 @@ int main()
     for(int i = 0; i < ::neuronAmount; i++)
         neurons[i] = new SingleNeuron(i);
 
-    NeuronTrainer trainer(neurons);
-    trainer.startTrain();
+//    NeuronTrainer trainer(neurons);
+//    trainer.startTrain();
 
+    R_Element re(neurons);
+    cout << re.getResult(::numbers[2]) << endl;
 
     return 0;
-
 }

@@ -1,6 +1,5 @@
 #include "neurontrainer.h"
 
-
 #include <thread>
 #include <unistd.h>
 #include <iostream>
@@ -9,9 +8,9 @@ using namespace std;
 
 thread threads[::neuronAmount];
 
-NeuronTrainer::NeuronTrainer(SingleNeuron** singleNeuronArray)
+NeuronTrainer::NeuronTrainer(SingleNeuron** singleNeuronArray) :
+    trainTarget(singleNeuronArray)
 {
-    trainTarget = singleNeuronArray;
 }
 
 int NeuronTrainer::countOne()

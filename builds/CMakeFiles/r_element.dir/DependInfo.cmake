@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/vlad/projects/qt/neuron10/main.cpp" "/home/vlad/projects/qt/neuron10/builds/CMakeFiles/neuron10.dir/main.cpp.o"
+  "/home/vlad/projects/qt/neuron10/r_element.cpp" "/home/vlad/projects/qt/neuron10/builds/CMakeFiles/r_element.dir/r_element.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -14,9 +14,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/vlad/projects/qt/neuron10/builds/CMakeFiles/SingleNeuron.dir/DependInfo.cmake"
-  "/home/vlad/projects/qt/neuron10/builds/CMakeFiles/trainer.dir/DependInfo.cmake"
-  "/home/vlad/projects/qt/neuron10/builds/CMakeFiles/r_element.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

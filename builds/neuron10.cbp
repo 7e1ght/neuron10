@@ -27,8 +27,8 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="trainer">
-				<Option output="/home/vlad/projects/qt/neuron10/builds/libtrainer.a" prefix_auto="0" extension_auto="0"/>
+			<Target title="SingleNeuron">
+				<Option output="/home/vlad/projects/qt/neuron10/builds/libSingleNeuron.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/vlad/projects/qt/neuron10/builds"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
@@ -44,14 +44,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 trainer"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 SingleNeuron"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="trainer/fast">
-				<Option output="/home/vlad/projects/qt/neuron10/builds/libtrainer.a" prefix_auto="0" extension_auto="0"/>
+			<Target title="SingleNeuron/fast">
+				<Option output="/home/vlad/projects/qt/neuron10/builds/libSingleNeuron.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/vlad/projects/qt/neuron10/builds"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
@@ -67,7 +67,17 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 trainer/fast"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 SingleNeuron/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/vlad/projects/qt/neuron10/builds"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 clean"/>
@@ -119,18 +129,8 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/vlad/projects/qt/neuron10/builds"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="SingleNeuron">
-				<Option output="/home/vlad/projects/qt/neuron10/builds/libSingleNeuron.a" prefix_auto="0" extension_auto="0"/>
+			<Target title="trainer">
+				<Option output="/home/vlad/projects/qt/neuron10/builds/libtrainer.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/vlad/projects/qt/neuron10/builds"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
@@ -146,14 +146,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 SingleNeuron"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 trainer"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="SingleNeuron/fast">
-				<Option output="/home/vlad/projects/qt/neuron10/builds/libSingleNeuron.a" prefix_auto="0" extension_auto="0"/>
+			<Target title="trainer/fast">
+				<Option output="/home/vlad/projects/qt/neuron10/builds/libtrainer.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/vlad/projects/qt/neuron10/builds"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
@@ -169,7 +169,53 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 SingleNeuron/fast"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 trainer/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="r_element">
+				<Option output="/home/vlad/projects/qt/neuron10/builds/libr_element.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/vlad/projects/qt/neuron10/builds"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 r_element"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="r_element/fast">
+				<Option output="/home/vlad/projects/qt/neuron10/builds/libr_element.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/vlad/projects/qt/neuron10/builds"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 r_element/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/vlad/projects/qt/neuron10/builds/Makefile&quot;  VERBOSE=1 clean"/>
@@ -184,6 +230,12 @@
 		</Unit>
 		<Unit filename="/home/vlad/projects/qt/neuron10/neurontrainer.h">
 			<Option target="trainer"/>
+		</Unit>
+		<Unit filename="/home/vlad/projects/qt/neuron10/r_element.cpp">
+			<Option target="r_element"/>
+		</Unit>
+		<Unit filename="/home/vlad/projects/qt/neuron10/r_element.h">
+			<Option target="r_element"/>
 		</Unit>
 		<Unit filename="/home/vlad/projects/qt/neuron10/singleneuron.cpp">
 			<Option target="SingleNeuron"/>

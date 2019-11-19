@@ -93,7 +93,7 @@ unsigned int SingleNeuron::getCounter()
     return counter;
 }
 
-void SingleNeuron::setInput(const unsigned char* inputArray)
+void SingleNeuron::setInput(unsigned char* inputArray)
 {
     for(int i = 0; i < ::signalNum; i++)
     {
@@ -105,11 +105,12 @@ SingleNeuron::SingleNeuron(int learnNum) : target(learnNum)
 {
     trained = false;
     counter = 0;
-    ifstream in(prefix + to_string(target), ios::binary);
 
+    ifstream in(prefix + to_string(target), ios::binary);
     if(in.is_open())
     {
         in.read((char*)&coefs, sizeof (coefs));
+
         trained = true;
     }
     else

@@ -6,23 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/vlad/projects/qt/neuron10/main.cpp
-iostream
--
-thread
--
-unistd.h
--
+/home/vlad/projects/qt/neuron10/neurontrainer.h
 singleneuron.h
 /home/vlad/projects/qt/neuron10/singleneuron.h
-neurontrainer.h
-/home/vlad/projects/qt/neuron10/neurontrainer.h
+
+/home/vlad/projects/qt/neuron10/r_element.cpp
 r_element.h
 /home/vlad/projects/qt/neuron10/r_element.h
-
+neurontrainer.h
 /home/vlad/projects/qt/neuron10/neurontrainer.h
-singleneuron.h
-/home/vlad/projects/qt/neuron10/singleneuron.h
 
 /home/vlad/projects/qt/neuron10/r_element.h
 singleneuron.h
