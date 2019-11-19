@@ -1,0 +1,2 @@
+/usr/bin/ar qc libSingleNeuron.a  CMakeFiles/SingleNeuron.dir/singleneuron.cpp.o
+/usr/bin/ranlib libSingleNeuron.a

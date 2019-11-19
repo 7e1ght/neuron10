@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtrainer.a  CMakeFiles/trainer.dir/neurontrainer.cpp.o
+/usr/bin/ranlib libtrainer.a

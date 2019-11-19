@@ -1,0 +1,1 @@
+/usr/bin/g++  -g  -rdynamic CMakeFiles/neuron10.dir/main.cpp.o  -o neuron10 libSingleNeuron.a libtrainer.a libSingleNeuron.a -lpthread 

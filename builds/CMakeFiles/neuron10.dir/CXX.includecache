@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/vlad/projects/qt/neuron10/main.cpp
+iostream
+-
+thread
+-
+unistd.h
+-
+singleneuron.h
+/home/vlad/projects/qt/neuron10/singleneuron.h
+neurontrainer.h
+/home/vlad/projects/qt/neuron10/neurontrainer.h
+
+/home/vlad/projects/qt/neuron10/neurontrainer.h
+singleneuron.h
+/home/vlad/projects/qt/neuron10/singleneuron.h
+
+/home/vlad/projects/qt/neuron10/singleneuron.h
+string
+-
+
