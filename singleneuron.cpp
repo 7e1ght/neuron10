@@ -93,7 +93,7 @@ unsigned int SingleNeuron::getCounter()
     return counter;
 }
 
-void SingleNeuron::setInput(unsigned char* inputArray)
+void SingleNeuron::setInput(int* inputArray)
 {
     for(int i = 0; i < ::signalNum; i++)
     {

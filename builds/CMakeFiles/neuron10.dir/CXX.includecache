@@ -19,6 +19,8 @@ neurontrainer.h
 /home/vlad/projects/qt/neuron10/neurontrainer.h
 r_element.h
 /home/vlad/projects/qt/neuron10/r_element.h
+iostream
+-
 
 /home/vlad/projects/qt/neuron10/neurontrainer.h
 singleneuron.h

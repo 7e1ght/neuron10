@@ -9,7 +9,7 @@ namespace
     const std::string prefix = "coefs";
     const int correctAnswersLimit = 1000;
 
-    unsigned char numbers[10][15] =
+    int numbers[10][15] =
     {
         {1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1},  // 0
         {0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1},  // 1
@@ -42,7 +42,7 @@ public:
     bool isTrained();
     void start();
     unsigned int getCounter();
-    void setInput(unsigned char* inputArray);
+    void setInput(int* inputArray);
 
     SingleNeuron(int learnNum);
 };

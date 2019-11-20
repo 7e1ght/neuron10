@@ -12,5 +12,4 @@ add_library(r_element STATIC r_element.cpp r_element.h)
 
 target_link_libraries(trainer ${CMAKE_THREAD_LIBS_INIT} SingleNeuron)
 target_link_libraries(r_element ${CMAKE_THREAD_LIBS_INIT})
-
 target_link_libraries(${PROJECT_NAME} SingleNeuron trainer r_element)

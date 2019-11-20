@@ -13,7 +13,7 @@ private:
     SingleNeuron** trainedSingleNeuronArray;
 public:
     R_Element(SingleNeuron** trainedArray);
-    unsigned getResult(unsigned char*);
+    unsigned getResult(int*);
 };
 
 #endif // R_ELEMENT_H
